@@ -1,16 +1,17 @@
 {% extends 'base.html' %}
+{% load custom_filters %}
 {% block content %}
 
 <h2>Where would you like to go today?</h2>
 
 {% for adventure in adventures %}
 <div class="card">
-    <div class="card-content">
-        <span class="card-title">{{ adventure.name }}</span>
-        <p>Difficulty: {{ adventure.difficulty }}</p>
-        <p>Description: {{ adventure.description }}</p>
-        <p>Endings: {{ adventure.end_count }}</p>
-    </div>
+    <a href="{% url 'detail' adventure.id %}">
+        <div class="card-content">
+            <span class="card-title">{{ adventure.title|capitalize_title }}</span>
+            <p>Suitable for: {{ adventure.age_range }}</p>
+        </div>
+    </a>
 </div>
 
 {% endfor %}
