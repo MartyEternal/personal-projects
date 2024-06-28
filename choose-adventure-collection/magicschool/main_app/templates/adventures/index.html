@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h2>Where would you like to go today?</h2>
+
+{% for adventure in adventures %}
+<div class="card">
+    <div class="card-content">
+        <span class="card-title">{{ adventure.name }}</span>
+        <p>Difficulty: {{ adventure.difficulty }}</p>
+        <p>Description: {{ adventure.description }}</p>
+        <p>Endings: {{ adventure.end_count }}</p>
+    </div>
+</div>
+
+{% endfor %}
+{% endblock %}
