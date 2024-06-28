@@ -11,9 +11,11 @@ Name: Marty Lau
 Age: 34
 Sex: Male
 Ethnicity: Chinese
+
 Languages Spoken: 
 - English (fluent)
 - Chinese, Cantonese (casual)
+
 STR: 10
 DEX: 8
 CON: 14
