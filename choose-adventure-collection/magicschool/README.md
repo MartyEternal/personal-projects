@@ -15,6 +15,7 @@ Key Choices:
 - Exploring the Enchanted Forest: Will you follow the glowing path, or venture into the mysterious dark woods?
 - Solving Mystical Riddles: Can you outsmart the mischievous pixies and unlock the secrets of the ancient library?
 - Facing Magical Challenges: Will you use your wit, bravery, or magic to overcome obstacles?
+
 Every choice you make shapes your adventure. Will you become the hero of Mystic Moon Magic Academy and save the day? The enchanted quest awaits you!
 
 Are you ready to begin your magical journey? The world of Mystic Moon Magic Academy is full of surprises and wonder. Grab your wand, and let the adventure begin!
