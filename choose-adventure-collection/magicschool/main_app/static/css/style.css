@@ -1,14 +1,39 @@
 body {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-  }
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+footer.page-footer {
+  padding-top: 0;
+  text-align: right;
+}
+
+.card-action {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.play-button {
+  flex-grow: 1;
+  text-align: left;
+}
+
+.right-actions {
+  display: flex;
   
-  main {
-    flex: 1 0 auto;
-  }
-  
-  footer.page-footer {
-    padding-top: 0;
-    text-align: right;
-  }
+}
+
+.right-actions a {
+  padding: 10px 15px;
+  text-decoration: none;
+  color: black;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}

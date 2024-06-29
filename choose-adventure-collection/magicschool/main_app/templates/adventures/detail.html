@@ -7,13 +7,16 @@
 <div class="card">
     <div class="card-content">
         <span class="card-title">{{ adventure.title|capitalize_title }}</span>
-        <p>Suitable for: {{ adventure.age_range }}</p>
+        <p>Suitable for: {{ adventure.age_range }} year olds and up</p>
         <p>Description: {{ adventure.description }}</p>
         <p>Endings: {{ adventure.end_count }}</p>
     </div>
     <div class="card-action">
-        <a href="{% url 'adventures_update' adventure.id %}">Edit</a>
-        <a href="{% url 'adventures_delete' adventure.id %}">Delete</a>
+        <a class="play-button" href="#">Play</a>
+        <div class="right-actions">
+            <a href="{% url 'adventures_update' adventure.id %}">Edit</a>
+            <a href="{% url 'adventures_delete' adventure.id %}">Delete</a>
+        </div>
     </div>
 </div>
 
