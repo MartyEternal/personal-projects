@@ -1,0 +1,15 @@
+<%- include('../partials/header') %>
+
+    <ul>
+        <% chapters.forEach(function(c) { %>
+            <li>
+                <a href="/chapters/<%= c.id %>">
+                    <%= c.chapter %>
+                </a>
+                -
+                <%= c.played ? 'played' : 'not played' %>
+            </li>
+            <% }); %>
+    </ul>
+
+    <%- include('../partials/footer') %>
