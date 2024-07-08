@@ -9,6 +9,16 @@ var router = express.Router();
 var chaptersCtrl = require('../controllers/chapters');
 
 router.get('/', chaptersCtrl.index);
+
+router.get('/new', chaptersCtrl.new);
+router.post('/', chaptersCtrl.create);
+router.get('/:id/edit', chaptersCtrl.edit);
+router.put('/:id', chaptersCtrl.update);
+
 router.get('/:id', chaptersCtrl.show);
+
+router.delete('/:id', chaptersCtrl.delete);
+
+
 
 module.exports = router;

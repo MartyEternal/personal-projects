@@ -1,0 +1,12 @@
+<%- include("../partials/header") %>
+
+    <h3>
+        <%= chapter.chapter %>
+    </h3>
+    <form action="/chapters/<%= chapter.id %>?_method=PUT" method="POST">
+        <label for="text">Chapter Title:</label>
+        <input type="text" id="chapter" name="chapter" value="<%= chapter.chapter %>">
+        <button type="submit">Update Chapter</button>
+    </form>
+
+    <%- include("../partials/footer") %>

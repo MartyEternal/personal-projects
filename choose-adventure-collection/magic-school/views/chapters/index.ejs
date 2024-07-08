@@ -3,6 +3,9 @@
     <ul>
         <% chapters.forEach(function(c) { %>
             <li>
+                <form action="/chapters/<%= c.id %>?_method=DELETE" class="delete-form" method="POST">
+                    <button type="submit">X</button>
+                </form>
                 <a href="/chapters/<%= c.id %>">
                     <%= c.chapter %>
                 </a>
@@ -11,5 +14,6 @@
             </li>
             <% }); %>
     </ul>
+    <a href="/chapters/new">Write a New Chapter</a>
 
     <%- include('../partials/footer') %>
