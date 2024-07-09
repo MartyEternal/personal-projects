@@ -12,6 +12,23 @@
   -ms-user-select: none;
 }
 
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+
 .tissue-roll {
   font-size: 5rem;
   user-select: none;
