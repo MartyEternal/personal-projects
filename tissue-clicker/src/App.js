@@ -3,25 +3,25 @@ import { useState, useEffect } from 'react';
 import './App.css';
 
 function App() {
-  const [clickCount, setClickCount] = userState(0);
+  const [clickCount, setClickCount] = useState(0);
 
   function handleClick() {
     setClickCount(clickCount + 1);
   }
 
-  function handleKeyPress() {
-    if (event.code === 'Space') {
-      setClickCount(clickCount + 1);
-    }
-  }
+  // function handleKeyPress() {
+  //   if (event.key === ' ') {
+  //     setClickCount(clickCount + 1);
+  //   }
+  // }
 
-  useEffect(function() {
-    window.addEventListener('keydown', handleKeyPress);
+  // useEffect(function() {
+  //   window.addEventListener('keydown', handleKeyPress);
 
-    return function() {
-      window.removeEventListener('keydown', handleKeyPress);
-    };
-  }, [clickCount]);
+  //   return function() {
+  //     window.removeEventListener('keydown', handleKeyPress);
+  //   };
+  // }, [clickCount]);
 
   return (
     <div className="App" onClick={handleClick}>
