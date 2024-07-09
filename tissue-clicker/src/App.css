@@ -6,11 +6,17 @@
   align-items: center;
   height: 100vh;
   background-color: #f0f0f0;
-  cursor: pointer;
+  cursor: default;
+  user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 }
 
 .tissue-roll {
   font-size: 5rem;
+  user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 }
 
 .App-logo {

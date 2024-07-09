@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import { useState, useEffect } from 'react';
 import './App.css';
 
@@ -8,20 +7,6 @@ function App() {
   function handleClick() {
     setClickCount(clickCount + 1);
   }
-
-  // function handleKeyPress() {
-  //   if (event.key === ' ') {
-  //     setClickCount(clickCount + 1);
-  //   }
-  // }
-
-  // useEffect(function() {
-  //   window.addEventListener('keydown', handleKeyPress);
-
-  //   return function() {
-  //     window.removeEventListener('keydown', handleKeyPress);
-  //   };
-  // }, [clickCount]);
 
   return (
     <div className="App" onClick={handleClick}>
