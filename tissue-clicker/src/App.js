@@ -1,6 +1,9 @@
-import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import './App.css';
 import Home from './Home';
+import Rollers from './Rollers';
+import Decor from './Decor';
+import About from './About';
 
 function App() {
   return (
@@ -14,13 +17,15 @@ function App() {
             <li><Link to="/about">About</Link></li>
           </ul>
         </nav>
-        <Switch>
-          <Route path="/" exact component={Home} />
-          <Route path="/rollers" component={Rollers} />
-          <Route path="/decor" component={Decor} />
-          <Route path="/about" component={About} />
-        </Switch>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/rollers" element={<Rollers />} />
+          <Route path="/decor" element={<Decor />} />
+          <Route path="/about" element={<About />} />
+        </Routes>
       </div>
     </Router>
   );
 }
+
+export default App;
