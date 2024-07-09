@@ -1,8 +1,9 @@
-import { useState } from 'react';
+import { useContext } from 'react';
+import ClickContext from './ClickContext';
 import './App.css';
 
 function Home() {
-    const [clickCount, setClickCount] = useState(0);
+    const { clickCount, setClickCount } = useContext(ClickContext);
 
     function handleClick() {
         setClickCount(clickCount + 1);
