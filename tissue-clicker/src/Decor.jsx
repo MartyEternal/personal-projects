@@ -18,9 +18,8 @@ function Decor() {
     }
 
     return (
-        <div className="decor" style={{ backgroundColor: unlockedColors[unlockedColors.length - 1] || "#f0f0f0" }}>
+        <div className="decor">
             <h1>Decor</h1>
-            <p>Customize your background with images unlocked with tradeable items.</p>
             <div className="decor-list">
                 {decorData.map(function (decor, index) {
                     return (

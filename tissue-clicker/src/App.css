@@ -1,8 +1,8 @@
 .App {
+  position: relative;
   text-align: center;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   height: 100vh;
   background-color: #f0f0f0;
@@ -16,10 +16,11 @@
 
 nav {
   position: absolute;
-  top: 50px;
+  top: 20px;
   width: 100%;
-  overflow: hidden;
-  
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
 
 nav ul {
@@ -27,7 +28,6 @@ nav ul {
   padding: 0;
   display: flex;
   gap: 20px;
-  justify-content: center;
 }
 
 nav ul li {
@@ -70,8 +70,15 @@ nav ul li a {
 /* Roller Menu  */
 
 .rollers {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
   padding: 20px;
   text-align: center;
+  background: #ffffff;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .roller-list {
@@ -96,8 +103,15 @@ nav ul li a {
 /* Decor Menu */
 
 .decor {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
   padding: 20px;
   text-align: center;
+  background: #ffffff;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .decor-list {
@@ -117,4 +131,18 @@ nav ul li a {
 .decor-item button {
   margin-top: 10px;
   padding: 5px 10px;
+}
+
+/* About Menu */
+
+.about {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 20px;
+  text-align: center;
+  background: #ffffff;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
