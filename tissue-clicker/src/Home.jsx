@@ -10,7 +10,7 @@ function Home() {
 
     useEffect(function () {
         if (isPopped) {
-            var timer = setTimeout(function () {
+            const timer = setTimeout(function () {
                 setIsPopped(false);
             }, 200);
             return function () {
@@ -20,7 +20,7 @@ function Home() {
     }, [isPopped]);
 
     useEffect(function() {
-        var resetTimer = setTimeout(function() {
+        const resetTimer = setTimeout(function() {
             if (Date.now() - lastClickTime >= 5000) {
                 setSize(5);
             }
