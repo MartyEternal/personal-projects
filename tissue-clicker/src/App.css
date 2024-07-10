@@ -12,6 +12,8 @@
   -ms-user-select: none;
 }
 
+/* Nav Bar  */
+
 nav {
   position: absolute;
   top: 50px;
@@ -38,6 +40,8 @@ nav ul li a {
   font-weight: bold;
 }
 
+/* Main Game */
+
 .home {
   width: 100vw;
   height: 100vh;
@@ -63,6 +67,8 @@ nav ul li a {
   font-size: 500px;
 }
 
+/* Roller Menu  */
+
 .rollers {
   padding: 20px;
   text-align: center;
@@ -83,6 +89,32 @@ nav ul li a {
 }
 
 .roller button {
+  margin-top: 10px;
+  padding: 5px 10px;
+}
+
+/* Decor Menu */
+
+.decor {
+  padding: 20px;
+  text-align: center;
+}
+
+.decor-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.decor-item {
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: 200px;
+  text-align: center;
+}
+
+.decor-item button {
   margin-top: 10px;
   padding: 5px 10px;
 }
