@@ -12,11 +12,20 @@
   -ms-user-select: none;
 }
 
+nav {
+  position: absolute;
+  top: 50px;
+  width: 100%;
+  overflow: hidden;
+  
+}
+
 nav ul {
   list-style-type: none;
   padding: 0;
   display: flex;
   gap: 20px;
+  justify-content: center;
 }
 
 nav ul li {
@@ -29,11 +38,29 @@ nav ul li a {
   font-weight: bold;
 }
 
+.home {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .tissue-roll {
   font-size: 5rem;
   user-select: none;
   -webkit-user-select: none;
   -ms-user-select: none;
+  transition: font-size 1s ease;
+}
+
+.tissue-roll.popped {
+  transform: scale(1.1);
+}
+
+.tissue-roll.max-size {
+  font-size: 500px;
 }
 
 .App-logo {
