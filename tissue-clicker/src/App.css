@@ -74,6 +74,9 @@ nav ul li a {
   left: 0;
   top: 50%;
   transform: translateY(-50%);
+  width: 250px; /* Set a fixed width */
+  height: 80%; /* Set a fixed height */
+  overflow-y: auto; /* Enable vertical scrolling */
   padding: 20px;
   text-align: center;
   background: #ffffff;
@@ -84,7 +87,7 @@ nav ul li a {
 .roller-list {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 10px; /* Reduced gap to fit more rollers */
   align-items: center;
 }
 
@@ -107,6 +110,9 @@ nav ul li a {
   right: 0;
   top: 50%;
   transform: translateY(-50%);
+  width: 250px; /* Set a fixed width */
+  height: 80%; /* Set a fixed height */
+  overflow-y: auto; /* Enable vertical scrolling */
   padding: 20px;
   text-align: center;
   background: #ffffff;
@@ -117,7 +123,7 @@ nav ul li a {
 .decor-list {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 10px; /* Reduced gap to fit more items */
   align-items: center;
 }
 
