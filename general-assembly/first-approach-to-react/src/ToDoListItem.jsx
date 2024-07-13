@@ -1,5 +1,7 @@
-export default function() {
+function ToDoListItem({ todo }) {
     return (
-        <li>To Do Item</li>
+        <li className="ToDoListItem">{todo}</li>
     )
 }
+
+export default ToDoListItem;
