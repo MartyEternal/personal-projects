@@ -1,4 +1,32 @@
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
+.student {
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 80vw;
+  padding: 5px 25px;
+}
+
+.left {
+  align-self: center;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+}
+
+.score {
+  display: flex;
+  flex-direction: row;
+  display: inline-block;
+  margin: 0 20px;
+}

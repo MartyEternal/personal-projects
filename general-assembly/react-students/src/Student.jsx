@@ -4,11 +4,16 @@ import Score from './Score';
 
 function Student({ student }) {
     return (
-        <div>
-            <span><h2>{student.name}</h2></span>
-            <span>{student.bio}</span>
-            <div>
-                {student.scores.map((score, index) => (<Score key={index} score={score} />))}
+        <div className="student">
+            <div className="left">
+                <span className="name"><h2>{student.name}</h2></span>
+
+            </div>
+            <div className="right">
+                <span className="bio">{student.bio}</span>
+                <span className="score">
+                    {student.scores.map((score, index) => (<Score key={index} score={score} />))}
+                </span>
             </div>
         </div>
     )
