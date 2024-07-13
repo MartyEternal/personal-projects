@@ -1,0 +1,70 @@
+.App {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  grid-template-rows: 2fr 1fr 2fr;
+  height: 800px;
+  width: 800px;
+  color: white;
+}
+
+.bedroom {
+  background-color: #2C7188;
+}
+
+.bedroom:nth-child(1) {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+.bedroom:nth-child(4) {
+  grid-column: 1 / 2;
+  grid-row: 3 / 4;
+}
+
+.bedroom:nth-child(7) {
+  grid-column: 3 / 5;
+  grid-row: 3 / 4;
+}
+
+.livingroom {
+  grid-column: 2 / 4;
+  grid-row: 1 / 3;
+  background-color: #c3b091;
+}
+
+.kitchen {
+  grid-column: 4 / 5;
+  grid-row: 1 / 3;
+  background-color: #f4a261;
+  position: relative;
+}
+
+.oven {
+  align-self: start;
+  width: 50%;
+  height: 50px;
+  background-color: #e76f51;
+}
+
+.sink {
+  align-self: start;
+  width: 50%;
+  height: 50px;
+  background-color: #8d6747;
+}
+
+.bath {
+  background-color: #40681d;
+}
+
+#bath-Full {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
+
+#bath-Half {
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+}
+
+
