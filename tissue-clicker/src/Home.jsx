@@ -2,7 +2,7 @@ import { useContext, useState, useEffect } from 'react';
 import ClickContext from './ClickContext';
 import './App.css';
 
-function Home() {
+function Home(props) {
     const { clickCount, setClickCount } = useContext(ClickContext);
     const [size, setSize] = useState(5); // Base size in rem
     const [isPopped, setIsPopped] = useState(false);
@@ -10,7 +10,7 @@ function Home() {
 
     useEffect(function () {
         if (isPopped) {
-            const timer = setTimeout(function () {
+            var timer = setTimeout(function () {
                 setIsPopped(false);
             }, 200);
             return function () {
@@ -20,9 +20,9 @@ function Home() {
     }, [isPopped]);
 
     useEffect(function () {
-        const resetTimer = setTimeout(function () {
+        var resetTimer = setTimeout(function () {
             if (Date.now() - lastClickTime >= 5000) {
-                setSize(5);
+                setSize(5); // Reset size to original after 5 seconds of inactivity
             }
         }, 5000);
 

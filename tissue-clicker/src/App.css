@@ -150,9 +150,9 @@ nav ul li a {
 
 /* About Menu */
 
-.about {
+.about, .settings {
   position: absolute;
-  top: 0;
+  top: 60px;
   left: 50%;
   transform: translateX(-50%);
   padding: 20px;
@@ -160,4 +160,8 @@ nav ul li a {
   background: #ffffff;
   border: 1px solid #ccc;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.settings-item {
+  margin: 10px 0;
 }
