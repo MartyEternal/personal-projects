@@ -1,5 +1,15 @@
-export default function() {
+function ToDoListItem({ todo, index }) {
     return (
-        <li>To Do Item</li>
+        <li
+            className="ToDoListItem"
+            style={{
+                backgroundColor: index % 2 ? "plum" : "lavender"
+            }}
+        >
+            <span className="listItemNumber">{index}</span>
+            <span>{todo}</span>
+        </li>
     )
 }
+
+export default ToDoListItem;

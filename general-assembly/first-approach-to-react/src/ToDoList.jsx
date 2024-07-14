@@ -1,10 +1,16 @@
 import ToDoListItem from "./ToDoListItem";
+import "./ToDoList.css";
 
-export default function ToDoList() {
+function ToDoList({ todos }) {
     return (
-        <ul>
-            <ToDoListItem />
-            <ToDoListItem />
-        </ul>
+        <div className="ToDoList">
+            <ul>
+                {todos.map((t, idx) => (
+                    <ToDoListItem todo={t} key={idx} index={idx + 1} />
+                ))}
+            </ul>
+        </div>
     );
-};
+}
+
+export default ToDoList;

@@ -1,5 +1,28 @@
+/* SkillList stuff */
+
 .App {
+  font-family: sans-serif;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.padding-0 {
+  padding: 0;
+}
+
+.teal-text {
+  color: teal;
+}
+
+
+/* ToDoList stuff */
+
+/* .App {
+  text-align: center;
+  width: 100vw;
 }
 
 .App-logo {
@@ -13,7 +36,7 @@
   }
 }
 
-.App-header {
+body {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -22,6 +45,7 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  
 }
 
 .App-link {
@@ -32,6 +56,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -69,10 +94,10 @@ li {
 }
 
 li:hover {
-  font-size: 30px;
+  font-size: 35px;
   transition: font-size 0.5s;
 }
 
 option {
   font-size: 15px;
-}
+} */
