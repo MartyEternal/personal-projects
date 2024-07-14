@@ -1,6 +1,6 @@
 /* SkillList stuff */
 
-.App {
+/* .App {
   font-family: sans-serif;
   text-align: center;
   display: flex;
@@ -15,12 +15,12 @@
 
 .teal-text {
   color: teal;
-}
+} */
 
 
 /* ToDoList stuff */
 
-/* .App {
+.App {
   text-align: center;
   width: 100vw;
 }
@@ -100,4 +100,4 @@ li:hover {
 
 option {
   font-size: 15px;
-} */
+}
