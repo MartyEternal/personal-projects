@@ -16,7 +16,10 @@ const todos = [
   'Learn React',
   'Learn the MERN Stack'
 ];
+<<<<<<< HEAD
 >>>>>>> 73ff451 (just tidying up)
+=======
+>>>>>>> ad3f73a8d6e78ced7fe859bd54211e9b11ed591a
 
 function App() {
   const [skills, setSkills] = useState([
@@ -52,7 +55,10 @@ function App() {
 
       </header>
     </div >
+<<<<<<< HEAD
 >>>>>>> 73ff451 (just tidying up)
+=======
+>>>>>>> ad3f73a8d6e78ced7fe859bd54211e9b11ed591a
   );
 }
 
