@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 function ToDoListItem({ todo, index }) {
     return (
         <li
@@ -9,6 +10,11 @@ function ToDoListItem({ todo, index }) {
             <span className="listItemNumber">{index}</span>
             <span>{todo}</span>
         </li>
+=======
+function ToDoListItem({ todo }) {
+    return (
+        <li className="ToDoListItem">{todo}</li>
+>>>>>>> 73ff451 (just tidying up)
     )
 }
 

@@ -1,9 +1,22 @@
 import { useState } from 'react';
 import './App.css';
+<<<<<<< HEAD
 import NewSkillForm from './NewSkillForm'
 import SkillList from './SkillList'
 import "./SkillListItem.css";
 import "./NewSkillForm.css";
+=======
+import ToDoList from './ToDoList';
+import SkillList from './skilllist';
+import NewSkillForm from './newskillform';
+import "./ToDoListItem.css";
+
+const todos = [
+  'Have Fun',
+  'Learn React',
+  'Learn the MERN Stack'
+];
+>>>>>>> 73ff451 (just tidying up)
 
 function App() {
   const [skills, setSkills] = useState([
@@ -19,10 +32,27 @@ function App() {
 
   return (
     <div className="App">
+<<<<<<< HEAD
       <h1 className="teal-text">React Dev Skills</h1>
       <span><SkillList skills={skills} /></span>
       <span><NewSkillForm onSubmit={addSkill} /></span>
     </div>
+=======
+      <header className="App-header">
+        {/* <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <h1>React Dev Skills</h1>
+        <SkillList />
+        <NewSkillForm /> */}
+
+        <h1>React To-Do</h1>
+        <ToDoList todos={todos} />
+
+      </header>
+    </div >
+>>>>>>> 73ff451 (just tidying up)
   );
 }
 

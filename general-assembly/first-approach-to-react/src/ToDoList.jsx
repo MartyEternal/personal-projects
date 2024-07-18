@@ -6,7 +6,11 @@ function ToDoList({ todos }) {
         <div className="ToDoList">
             <ul>
                 {todos.map((t, idx) => (
+<<<<<<< HEAD
                     <ToDoListItem todo={t} key={idx} index={idx + 1} />
+=======
+                    <ToDoListItem todo={t} key={idx} />
+>>>>>>> 73ff451 (just tidying up)
                 ))}
             </ul>
         </div>
