@@ -12,7 +12,7 @@
         <p>Endings: {{ adventure.end_count }}</p>
     </div>
     <div class="card-action">
-        <a class="play-button" href="#">Play</a>
+        <a class="play-button" href="{% url 'intro_view' %}">Play</a>
         <div class="right-actions">
             <a href="{% url 'adventures_update' adventure.id %}">Edit</a>
             <a href="{% url 'adventures_delete' adventure.id %}">Delete</a>
