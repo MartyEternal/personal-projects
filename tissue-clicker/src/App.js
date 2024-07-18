@@ -52,7 +52,6 @@ function App() {
         <div className={`App ${darkMode ? 'dark-mode' : ''}`}>
           <nav>
             <ul>
-              {/* <li><Link to="/">Home</Link></li> */}
               <li><Link to="#" onClick={handleToggleRollers}>Rollers</Link></li>
               <li><Link to="#" onClick={handleToggleDecor}>Decor</Link></li>
               <li><Link to="#" onClick={handleToggleAbout}>About</Link></li>
@@ -60,7 +59,7 @@ function App() {
             </ul>
           </nav>
           <div className="content">
-            <Home />
+            <Home tissueGetBigger={tissueGetBigger} showTitle={showTitle} />
             {activeMenu === 'rollers' && <Rollers />}
             {activeMenu === 'decor' && <Decor />}
             {activeMenu === 'about' && <About />}

@@ -8,8 +8,8 @@ function Settings(props) {
                 <label>
                     <input
                         type="checkbox"
-                        checked="{props.darkMode}"
-                        onChange="{props.toggleDarkMode}"
+                        checked={props.darkMode}
+                        onChange={props.toggleDarkMode}
                     />
                     Dark Mode
                 </label>
@@ -18,8 +18,8 @@ function Settings(props) {
                 <label>
                     <input
                         type="checkbox"
-                        checked="{props.tissueGetBigger}"
-                        onChange="{props.toggleTissueGetBigger}"
+                        checked={props.tissueGetBigger}
+                        onChange={props.toggleTissueGetBigger}
                     />
                     Tissue Gets Bigger
                 </label>
@@ -28,8 +28,8 @@ function Settings(props) {
                 <label>
                     <input
                         type="checkbox"
-                        checked="{props.showTitle}"
-                        onChange="{props.toggleShowTitle}"
+                        checked={props.showTitle}
+                        onChange={props.toggleShowTitle}
                     />
                     Hide Game Title
                 </label>
