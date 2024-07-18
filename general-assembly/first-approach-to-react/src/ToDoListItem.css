@@ -4,6 +4,8 @@
     border: 1vmin solid purple;
     list-style: none;
     font-size: 6vmin;
+<<<<<<< HEAD
+<<<<<<< HEAD
     display: flex;
     justify-content: left;
     align-items: center;
@@ -19,4 +21,8 @@
     min-height: 70px;
     color: white;
     font-size: 50px;
+=======
+>>>>>>> 73ff451 (just tidying up)
+=======
+>>>>>>> ad3f73a8d6e78ced7fe859bd54211e9b11ed591a
 }
